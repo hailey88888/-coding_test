@@ -1,0 +1,16 @@
+class Solution {
+    public String solution(String my_string, String letter) {
+        String answer = "";
+
+        answer = my_string.replace(letter, "");
+        return answer;
+    }
+}
+
+
+.replace(A, B);
+
+=> A를 B로 바꿔 주기 
+=> my_string.replace(letter, ""); 는
+=> my_string에 속한 문자중 letter매개변수로 전달받은 글자를 ""(빈칸)으로 바꿔달라는뜻
+=> 이렇게하면 특정문자를 없앨 수 있음
