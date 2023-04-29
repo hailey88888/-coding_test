@@ -1,0 +1,31 @@
+1. 내가쓴 풀이 
+import java.util.*;
+
+class Solution {
+    public int solution(int[] numbers) {
+        
+        int[]ant = Arrays.sort(numbers)};
+        
+        return ant[ant.length-1]* ant[ant.length-2];
+    }
+}
+
+문제점 
+이 코드의 문제점은 Arrays.sort() 메소드가 반환하는 값이 void가 아니라 int[]이 아니라는 것입니다.
+
+따라서, int[]ant = Arrays.sort(numbers)}는 잘못된 코드입니다. Arrays.sort(numbers)를 호출하고 반환되는 값을 따로 저장하지 않고, 다음과 같이 수정해야 합니다.
+Arrays.sort(numbers);
+int[] ant = numbers;
+
+
+2. 수정후 
+
+import java.util.*;
+
+class Solution {
+    public int solution(int[] numbers) {
+        Arrays.sort(numbers);
+        int[] ant = numbers;
+        return ant[ant.length-1] * ant[ant.length-2];
+    }
+}
