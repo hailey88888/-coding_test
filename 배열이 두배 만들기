@@ -1,0 +1,26 @@
+
+
+function solution(numbers) {
+    var answer = [];
+    
+    for(let i = 0; i < numbers.length; i++) {
+        answer.push(numbers[i] * 2);
+    }
+    
+    return answer;
+}
+
+
+나의 풀이 
+
+class Solution {
+    public int[] solution(int[] numbers) {
+        
+        
+        if(int i=0;i < numbers.length; i++){
+            numbers[i] *=2;
+        }
+        return number;
+    }
+    
+}
