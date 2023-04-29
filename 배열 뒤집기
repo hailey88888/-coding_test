@@ -1,0 +1,18 @@
+class Solution {
+    public int[] solution(int[] num_list) {
+    
+     //1. 매개변수로 전달받은 배열과 동일한 크기의 배열을 생성
+        int[] answer = new int[num_list.length];
+        
+     //2. num_list배열의 길이보다 1작은 숫자만큼 반복함
+     //3. answer[i]번째 요소에 num_list[num_list.length-i -1] 요소에 해당하는 엘리먼트를 배치
+     ex) num_list.length = 5
+         answer 3번째 요소에 num_list[5-3-1]요소
+         answer 4번째 요소에 num_list[5-4-1]요소
+         
+        for(int i = 0;i<num_list.length;i++){
+            answer[i]=num_list[num_list.length-i-1];
+        }
+        return answer;
+    }
+}
